@@ -1,3 +1,302 @@
-<html><body>
-<h1> Hello</h1>
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AppStudio.mk | Macedonian Mobile App Portfolio</title>
+    <meta
+      name="description"
+      content="A portfolio-style website inspired by the AppStudio.mk Google Play catalog, showcasing Macedonian utility, quiz, word, and discovery apps."
+    />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-glow page-glow-left" aria-hidden="true"></div>
+    <div class="page-glow page-glow-right" aria-hidden="true"></div>
+
+    <div class="site-shell">
+      <header class="hero reveal">
+        <nav class="topbar" aria-label="Primary">
+          <a class="brand" href="#top">
+            <span class="brand-mark">A</span>
+            <span class="brand-text">
+              <strong>AppStudio.mk</strong>
+              <span>mobile app showcase</span>
+            </span>
+          </a>
+
+          <a
+            class="button button-ghost"
+            href="https://play.google.com/store/apps/developer?id=AppStudio.mk"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Google Play profile
+          </a>
+        </nav>
+
+        <div class="hero-grid">
+          <section class="hero-copy">
+            <p class="eyebrow">Macedonian apps with range</p>
+            <h1>Utility, wordplay, trivia, and local discovery in one compact portfolio.</h1>
+            <p class="hero-text">
+              This concept site translates the public AppStudio.mk Google Play presence into a
+              dedicated brand page: practical apps, familiar language, and simple products that
+              feel close to daily life.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-solid" href="#apps">Explore the apps</a>
+              <a class="button button-outline" href="#approach">See the product approach</a>
+            </div>
+
+            <ul class="hero-tags" aria-label="Portfolio themes">
+              <li>Dream meanings</li>
+              <li>Baby names</li>
+              <li>Word games</li>
+              <li>Quiz nights</li>
+              <li>Skopje food picks</li>
+            </ul>
+          </section>
+
+          <aside class="spotlight-card reveal reveal-delay" aria-live="polite">
+            <div class="spotlight-head">
+              <p class="eyebrow">Portfolio spotlight</p>
+              <span class="spotlight-state">Selected app</span>
+            </div>
+
+            <div class="spotlight-body">
+              <p class="spotlight-kicker" id="spotlight-kicker">Reference app</p>
+              <h2 id="spotlight-title">Соновник</h2>
+              <p class="spotlight-description" id="spotlight-description">
+                A searchable Macedonian dream dictionary built around fast interpretation and
+                repeat use.
+              </p>
+            </div>
+
+            <dl class="spotlight-meta">
+              <div>
+                <dt>Format</dt>
+                <dd id="spotlight-format">Reference utility</dd>
+              </div>
+              <div>
+                <dt>Audience</dt>
+                <dd id="spotlight-audience">Everyday mobile readers</dd>
+              </div>
+              <div>
+                <dt>Design cue</dt>
+                <dd id="spotlight-cue">Clean, searchable, immediate</dd>
+              </div>
+            </dl>
+
+            <p class="spotlight-note">
+              The cards below update this panel and show how a focused app catalog can turn into a
+              more coherent brand story.
+            </p>
+          </aside>
+        </div>
+      </header>
+
+      <main>
+        <section class="section intro reveal" id="top">
+          <div class="section-heading">
+            <p class="eyebrow">Why this website</p>
+            <h2>From store listing to standalone identity.</h2>
+          </div>
+          <div class="intro-grid">
+            <p>
+              A developer page is functional, but it flattens everything into the same template.
+              This website reframes the catalog as a studio with a recognizable voice, a clear
+              portfolio, and a stronger path for discovery.
+            </p>
+            <p>
+              The tone here is built around the apps publicly associated with AppStudio.mk on
+              Google Play: language-first tools, casual games, and local lifestyle discovery.
+            </p>
+          </div>
+        </section>
+
+        <section class="section reveal" id="apps">
+          <div class="section-heading">
+            <p class="eyebrow">Featured apps</p>
+            <h2>A catalog shaped around familiar, useful mobile moments.</h2>
+          </div>
+
+          <div class="apps-grid">
+            <article
+              class="app-card app-card-active"
+              role="button"
+              tabindex="0"
+              aria-pressed="true"
+              data-kicker="Reference app"
+              data-title="Соновник"
+              data-description="A searchable Macedonian dream dictionary focused on quick interpretation and repeat lookup."
+              data-format="Reference utility"
+              data-audience="Everyday mobile readers"
+              data-cue="Clean, searchable, immediate"
+            >
+              <div class="app-card-top">
+                <span class="app-icon app-icon-night">SN</span>
+                <span class="app-type">Reference</span>
+              </div>
+              <h3>Соновник</h3>
+              <p>Dream meanings in Macedonian, designed for direct lookup instead of long browsing.</p>
+            </article>
+
+            <article
+              class="app-card"
+              role="button"
+              tabindex="0"
+              aria-pressed="false"
+              data-kicker="Family planning app"
+              data-title="Iminja za bebe"
+              data-description="A baby-name explorer that turns names, meanings, and browsing into a simple parent-friendly flow."
+              data-format="Family utility"
+              data-audience="Parents and families"
+              data-cue="Warm, calm, trust-building"
+            >
+              <div class="app-card-top">
+                <span class="app-icon app-icon-sand">IB</span>
+                <span class="app-type">Utility</span>
+              </div>
+              <h3>Iminja za bebe</h3>
+              <p>Browse baby names with a softer tone, more emotion, and a practical decision-making use case.</p>
+            </article>
+
+            <article
+              class="app-card"
+              role="button"
+              tabindex="0"
+              aria-pressed="false"
+              data-kicker="Word game"
+              data-title="Бесилка"
+              data-description="A Macedonian hangman-style word game that leans on language familiarity and replay value."
+              data-format="Casual word game"
+              data-audience="Students and puzzle fans"
+              data-cue="Playful, punchy, fast rounds"
+            >
+              <div class="app-card-top">
+                <span class="app-icon app-icon-coral">BK</span>
+                <span class="app-type">Game</span>
+              </div>
+              <h3>Бесилка</h3>
+              <p>A local-language take on hangman, built for quick sessions and high replayability.</p>
+            </article>
+
+            <article
+              class="app-card"
+              role="button"
+              tabindex="0"
+              aria-pressed="false"
+              data-kicker="Quiz experience"
+              data-title="Милионер Македонија"
+              data-description="A trivia-led experience with the recognizable tension and structure of a TV-style quiz format."
+              data-format="Trivia game"
+              data-audience="Quiz players and friend groups"
+              data-cue="Bold, dramatic, game-show energy"
+            >
+              <div class="app-card-top">
+                <span class="app-icon app-icon-gold">MM</span>
+                <span class="app-type">Trivia</span>
+              </div>
+              <h3>Милионер Македонија</h3>
+              <p>High-recognition quiz mechanics packaged for casual play and familiar entertainment value.</p>
+            </article>
+
+            <article
+              class="app-card"
+              role="button"
+              tabindex="0"
+              aria-pressed="false"
+              data-kicker="Local discovery app"
+              data-title="Me Gusto"
+              data-description="A Skopje restaurant discovery concept that turns local dining choices into a clearer mobile browse experience."
+              data-format="Lifestyle discovery"
+              data-audience="City explorers and food seekers"
+              data-cue="Editorial, local, appetite-led"
+            >
+              <div class="app-card-top">
+                <span class="app-icon app-icon-teal">MG</span>
+                <span class="app-type">Lifestyle</span>
+              </div>
+              <h3>Me Gusto</h3>
+              <p>Restaurant discovery for Skopje, moving the portfolio beyond games and reference tools.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section principles reveal" id="approach">
+          <div class="section-heading">
+            <p class="eyebrow">Product approach</p>
+            <h2>Three traits this studio portfolio consistently signals.</h2>
+          </div>
+
+          <div class="principles-grid">
+            <article class="principle-card">
+              <span class="principle-number">01</span>
+              <h3>Local-language relevance</h3>
+              <p>
+                The strongest pattern across the catalog is proximity: familiar language, familiar
+                formats, and topics that make sense in a Macedonian everyday context.
+              </p>
+            </article>
+
+            <article class="principle-card">
+              <span class="principle-number">02</span>
+              <h3>Simple repeat behavior</h3>
+              <p>
+                These apps are not trying to be everything. Each one is organized around a habit:
+                search, browse, guess, answer, or discover.
+              </p>
+            </article>
+
+            <article class="principle-card">
+              <span class="principle-number">03</span>
+              <h3>Compact but distinct identities</h3>
+              <p>
+                A dream dictionary and a trivia app should not feel visually identical. The site
+                uses color, rhythm, and card treatment to express those differences.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section cta-section reveal">
+          <div class="cta-panel">
+            <div>
+              <p class="eyebrow">Next step</p>
+              <h2>Use this as the starting point for a real AppStudio.mk home page.</h2>
+            </div>
+
+            <p>
+              The current concept is static and brand-oriented. It can be extended with live app
+              links, contact details, screenshots, privacy pages, and multilingual content once
+              you decide how public-facing the studio should be.
+            </p>
+
+            <a
+              class="button button-solid"
+              href="https://play.google.com/store/apps/developer?id=AppStudio.mk"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Open the developer profile
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>
+          <span id="year"></span> AppStudio.mk concept site. Built around the publicly visible
+          Google Play app portfolio.
+        </p>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
