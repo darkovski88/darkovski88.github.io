@@ -1,24 +1,29 @@
-# Encrypted Web Content Export
+# Web Content Export
 
-This folder contains encrypted copies of:
+This folder mirrors `content-source/files`.
+
+Upload the contents of this folder while preserving the directory structure:
 
 - `content/traffic-signs/countries/*.json`
 - `content/traffic-signs/theory/*.json`
 - `content/traffic-signs/images/**`
 - `featured/**`
+- `health.txt`
 
-Upload this folder while preserving the directory structure.
+When the files are hosted, set `HostedContentConfig.filesBaseUrl` in:
 
-The app decrypts these files using the configured content key seed from:
+- `composeApp/src/commonMain/kotlin/com/learn/driving/app/data/HostedContentConfig.kt`
 
-- `/Users/darko.petkovski/AndroidStudioProjects/learndrivingapp/composeApp/src/commonMain/kotlin/com/learn/driving/app/data/ContentProtectionConfig.kt`
+The base URL must point to the root that contains `content/` and `featured/`.
 
-Current canonical key seed:
+Example:
 
-- ``
+- `https://cdn.example.com/learndriving`
 
-The hosted base URL must point to the folder root that contains `content/` and `featured/`.
+Then the app will request:
 
-After you upload it, set `HostedContentConfig.filesBaseUrl` and the app will request encrypted files from there.
+- `https://cdn.example.com/learndriving/content/traffic-signs/countries/north_macedonia.json`
+- `https://cdn.example.com/learndriving/content/traffic-signs/images/mk/MK_road_sign_101.png`
+- `https://cdn.example.com/learndriving/featured/driving_school_topic.jpg`
 
-Security note: this is obfuscation-grade protection. A package or bundle identifier is public metadata, not a secret.
+The app now expects hosted content only. If these files or `health.txt` are missing from the server, the app will show the offline screen until the hosted content becomes reachable again.
