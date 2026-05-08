@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "developer": "BalkanAppStudio",
+  "defaultLocale": "en",
+  "locales": [
+    "en",
+    "mk",
+    "sr",
+    "bg"
+  ],
+  "apps": [
+    {
+      "packageName": "app.georush.trivia",
+      "icon": "",
+      "banner": "https://darkovski88.github.io/banners/georush_promo.jpg",
+      "priority": 1,
+      "localizations": {
+        "en": {
+          "name": "GeoRush - Speed Geography",
+          "promo": "Test your geography skills with fast-paced quizzes on flags, capitals and maps."
+        },
+        "mk": {
+          "name": "Georush - Брза географија",
+          "promo": ""
+        },
+        "sr": {
+          "name": "Georush - Brza geografija",
+          "promo": ""
+        },
+        "bg": {
+          "name": "Georush - Бърза география куиз",
+          "promo": ""
+        }
+      },
+      "iosId": "6761116978",
+      "iosUrl": "https://apps.apple.com/app/id6761116978"
+    },
+    {
+      "packageName": "com.bilioner.makedonija",
+      "icon": "",
+      "banner": "https://darkovski88.github.io/banners/millionaireX_promo.jpg",
+      "priority": 2,
+      "localizations": {
+        "en": {
+          "name": "Millionaire X",
+          "promo": "Answer 15 questions, use lifelines and win the ultimate prize."
+        }
+      }
+    },
+    {
+      "packageName": "com.sonovnik.v2.petkovski",
+      "icon": "",
+      "banner": "https://darkovski88.github.io/banners/sonovnik_promo.jpg",
+      "priority": 3,
+      "localizations": {
+        "en": {
+          "name": "Dream Interpreter",
+          "promo": "Discover the meanings behind your dreams with 1000+ offline interpretations."
+        }
+      },
+      "iosId": "6763051610",
+      "iosUrl": "https://apps.apple.com/app/id6763051610"
+    },
+    {
+      "packageName": "com.learn.driving.app",
+      "icon": "",
+      "banner": "https://darkovski88.github.io/banners/driving_test_promo.jpg",
+      "priority": 4,
+      "localizations": {
+        "en": {
+          "name": "Driving Tests",
+          "promo": "Practice road signs and theory tests to pass your driving exam faster."
+        }
+      }
+    },
+    {
+      "packageName": "slagalica.balkan.app.slagalica",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0f/e0/ea/0fe0ea46-70dd-50e4-188d-4dc6c46d093a/Placeholder.mill/1200x630wa.jpg",
+      "banner": "https://darkovski88.github.io/banners/8way_promo.jpg",
+      "priority": 8,
+      "localizations": {
+        "en": {
+          "name": "8 Way - Word Puzzle",
+          "promo": "Find hidden words in 8 directions across 500+ levels. Train your brain, earn stars and sharpen your word skills."
+        },
+        "mk": {
+          "name": "8 Насоки - Најди го зборот",
+          "promo": "Пронајди скриени зборови во 8 насоки низ 500+ нивоа. Тренирај го мозокот и освојувај ѕвезди."
+        },
+        "sr": {
+          "name": "8 Smerova - Слагалица речи",
+          "promo": "Pronađi skrivene reči u 8 smerova kroz 500+ nivoa. Trenira mozak, osvoji zvezde i napreduj."
+        },
+        "bg": {
+          "name": "8 Way - Филворд",
+          "promo": "Намери скрити думи в 8 посоки в 500+ нива. Тренирай ума си и спечели звезди."
+        }
+      },
+      "iosId": "6766798603",
+      "iosUrl": "https://apps.apple.com/app/id6766798603"
+    }
+  ]
+}
