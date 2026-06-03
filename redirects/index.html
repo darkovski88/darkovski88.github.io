@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <p>Redirecting...</p>
+
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
+      import {
+        getAnalytics,
+        logEvent,
+      } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-analytics.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyDT5wfxbiAWWKxoJGbGrEzrVUQJP3gped0",
+        authDomain: "redirects-d0a85.firebaseapp.com",
+        projectId: "redirects-d0a85",
+        storageBucket: "redirects-d0a85.firebasestorage.app",
+        messagingSenderId: "69695857483",
+        appId: "1:69695857483:web:666cb408b0984261adbece",
+        measurementId: "G-KT19NSQYZN",
+      };
+
+      const androidUrl =
+        "https://play.google.com/store/apps/details?id=slagalica.balkan.app.slagalica";
+
+      const iosUrl =
+        "https://apps.apple.com/us/app/8-way-word-puzzle/id6766798603";
+
+      const fallbackUrl =
+        "https://play.google.com/store/apps/details?id=slagalica.balkan.app.slagalica";
+
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      let platform = "desktop";
+      let targetUrl = fallbackUrl;
+
+      if (/android/i.test(userAgent)) {
+        platform = "android";
+        targetUrl = androidUrl;
+      } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        platform = "ios";
+        targetUrl = iosUrl;
+      }
+
+      // Analytics event
+      logEvent(analytics, "qr_redirect", {
+        platform: platform,
+        destination: targetUrl,
+      });
+
+      // Give analytics time to send
+      setTimeout(() => {
+        window.location.href = targetUrl;
+      }, 1000);
+    </script>
+  </body>
+</html>
