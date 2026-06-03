@@ -40,6 +40,7 @@
 
       let platform = "desktop";
       let targetUrl = fallbackUrl;
+      const appName = "8 Way Word Puzzle";
 
       if (/android/i.test(userAgent)) {
         platform = "android";
@@ -52,6 +53,7 @@
       // Analytics event
       logEvent(analytics, "qr_redirect", {
         platform: platform,
+        app_name: appName,
         destination: targetUrl,
       });
 
